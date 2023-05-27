@@ -54,7 +54,7 @@ class RegisterController extends Controller
 
         //Una vez registrado el usuario lo redireccionamos a su muro con el helpers redirect() 
         //y le pasamos la ruta del controlador
-        return redirect()->route('posts.index');
+        return redirect()->route('posts.index', ['user'=> auth()->user()]);
         
     }
 }
