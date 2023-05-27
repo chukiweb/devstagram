@@ -9,6 +9,8 @@
         
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <title>DevStagram - @yield('titulo')</title>
+        @vite('resources/css/app.css');
+        @vite('resources/js/app.js');
         <script src="{{ mix('js/app.js') }}" defer></script>
         {{-- Agregamos los estilos de livewire --}}
         @livewireStyles
